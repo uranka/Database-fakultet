@@ -1,0 +1,74 @@
+Uociti koji su to bitni podaci.
+Podaci se cuvaju na jednom jedinom mestu u db.To mesto mora da bude ono mesto ge najvise ima smisla da bude.
+
+Primer fakultet
+Najvazniji entitet je student jer fakultet postoji zbog studenata, a potom predmeti koji studenti slusaju i polazu.
+Model se dalje prosiruje koliko god je potrebno.
+
+STUDENT
+# broj indeksa
+* ime
+* prezime
+o datum rodjenja
+o JMBG
+* adresa
+o telefon
+o broj licne karte
+
+Uociti atribute koji su jedinstveni identifikatori. Za JMBG kazu da nije jedinstven da postoje dva coveka u Srbiji sa istim JMBG. 
+Ako su studenti stranci oni nemaju JMBG, ali to je pitanje opcionalnosti. Za svakog ko ima JMBG trebalo bi da je jedinstven.
+za primarni kljuc ce nam trebati jedinstvenost + obaveznost postojanja.
+
+Paralelno sa razvojem modela radi se i na razvoju dokumentacije, a u nju ide or. ova prica o jedinstvenim identifikatorima.
+
+Broj indeksa jeste jedinstveni identifikator.
+Broj licne karte jeste jedinstveni identifikator, ali moze da se menja (za sta mi je ovo bitno?)
+
+Analiziraj podatke sa kojima radimo:
+Ime i prezime smo odabrali da cuvamo odvojeno jer nije uvek jedna rec ime druga rec prezime, sve kombinacije su moguce (dva imena jedno prezime, jedno ime dva prezimena..).
+Broj indeksa je neki tekstualni podatak, obicno kombinacija smera, godine, studenta.
+Pravilo je da ne treba u bazi cuvati podatke koji mogu da se izracunaju. To bi znacilo da nam ne treba datum rodjenja jr se on moze izracunati iz JMBG.
+Od ovoga moze da se odstupi. Ako cesto pretrazujemo po datumu rodjenja da se ne bi gubilo vreme na izracunavanje njega iz JMBG.
+
+Primarni jedinstveni identifikator moze biti jedno polje ili vise, moze biti prirodan (postoji i van racunara) ili vestacki.
+Oracle: koriste se sekvence za vestacki primarni jed. identifikator.
+
+
+Posle studenta sledeci najvazniji entitet na fakultetu je predmet.
+PREDMET
+# sifra
+* naziv
+o plan i program
+* godina studija   <------ ako je god. studija vazna izdvojiti je kao poseban entite, zavisi koliko se siri prica
+Isti predmet na razlicitim godinama studija, za jedna smer na drugoj godini, a za drugi smer na trecoj godini? Verovatno ce se malo bar razlikovati zavisno od smera.
+Uvesti entitet smer.
+Plan i program je primer polja u tabeli koje nije mali podatak. To su vece kolicine podataka u pitanju (CLOB ili link ka fajlu koji se cuva van tabele).
+
+Veze izmedju studenta i predmeta
+Imamo dve veze: slusa predavanja i polaze ispite.
+Student moze da slusa predavanja iz jednog ili vise predmeta.
+Predmet mogu da slusaju jedan ili vise studenata.
+Student moze da polaze ispite iz jednog ili vise predmeta.
+Jedan predmet moze da polaze jedan ili vise studenata.
+
+Razbijanje veza vise-vise. Za polaze ispite uvden je medjuentitet ispit.
+ISPIT
+# datum
+* ocena
+o komentar
+* ime profesora  <----- moze da prodje u najjednostavnijem modelu-ako je ovde kraj price, obicno je profesor entitet za sebe
+Veza M:M ima jos neke skrivene atribute: ocena na ispitu,..Ako ih nema M:M sme da ostane u modelu(?), ali se ipak uvodi dodatna tabela za vezu.
+Medjuentitet ispit, a prva dva entiteta su student i predmet. Originalna opcionalnost ostaje uz prva dva entiteta (ovde je to moze - isprekidana linija).
+Uz ispit je mora. Ispit je kad je neki student morao da polaze neki predmet. 
+Imamo barred relationship sto znaco da za jed. prim ident. uzimamo broj indeksa iz studenta i sifru iz predmeta. Datum takodje ulazi.
+Ako pp. da je dovoljno da u bazi podataka za fakultet cuvamo samo poslednju ocenu koju je stduent dobio na polaganju  nekog ispita onda datum moze *.
+Ali to uglavnom nije slucaj, zelimo da pamtimo koje je sve ocene kad dobio, recimo dobijao je 5, 5 i 6 ili 6, 7, pa 10 (popravljao ocene). Zbog toga nam treba # kod datuma.
+
+
+Razbijanje veza vise-vise. Za student slusa predavanja iz predmeta.
+Uveli bismo neki medjuentitet predavanje koji sadrzi atribute profesori, kabineti, termini.
+
+
+
+
+
