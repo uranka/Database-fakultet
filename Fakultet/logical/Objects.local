@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="2B7DF633-F7B1-DC0B-6AD5-7ACED93BFD37" name="STUDENT" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Fakultet" id="E551F68E-42BF-82A0-9006-76C35F10F3DE" version="3.5">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-19 10:46:53 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E551F68E-42BF-82A0-9006-76C35F10F3DE</designId>
+</OSDM_Design>
