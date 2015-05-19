@@ -68,6 +68,33 @@ Ali to uglavnom nije slucaj, zelimo da pamtimo koje je sve ocene kad dobio, reci
 Razbijanje veza vise-vise. Za student slusa predavanja iz predmeta.
 Uveli bismo neki medjuentitet predavanje koji sadrzi atribute profesori, kabineti, termini.
 
+Primer veze 1:1. Ako bi bio entite profesor on bi mogao biti vezan sa entiteton poslovni karton vezom 1:1.
+Poslovni karton: kad je poceo da radi, kad je dobio licencu, broj licence itd.
+2NF: u entitet ispit ne dodaj mejl studenta jer je on u direktnoj funkcionalnoj zavisnosti samo id jednog polja broj indeksa a ne od celog prim. jed. id.
+Atribut telefon ne pripada entitetu student ako hocemo da cuvamo vise od jednog telefona (narusava se pravilo 1NF).
+Atribut telefon pripada entitetu studen ako trazimo samo jedan telefo, ali ovo u dokumentaciji obrazlozi (insistiramo na mejlu, a telefon moze da da neki jedan ako hoce).
+o staviti ako to polje nece biti odmah popunjeno (bice neki period vremena nepopunjeno).
+
+Ako hocemo da imamo sve moguce telefone neke osobe (licne, telefone roditelja, ...) to se resavana na dva nacina:
+1. telefon 1, telefon 2, telefon 3, ali tu je ogranicenje maksimalnog broja telefona na 3, 
+a mozda i  gomila polja ostane nepopunjena (ukoliko vecina ima 1 telefon)
+2. poseban entitet za telefon
+TELEFON
+# sifra
+* broj telefona
+o opis  <-- za opis da li se radi o mobilnom, fiksnom, telefonu roditelja
+
+Povezujemo entitet student sa entitetom telefon:
+SVaki student moze da ima jedan ili vise telefona.
+Telefon mora da pripada jednom studentu.
+
+Dokumentacija: sve sto ne mozemo nacrtati na ERD. Proceduralna pravila, npr. koji ispit moze student odredjene godine da polaze.
+Student prve godine ne moze da polaze ispite sa 4. godine. Student 3. godine moze da polaze ispite 3. godine tek kad polozi sve iz 1. i 2. godine.
+
+
+
+
+
 
 
 
