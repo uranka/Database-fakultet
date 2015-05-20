@@ -39,7 +39,7 @@ PREDMET
 # sifra
 * naziv
 o plan i program
-* godina studija   <------ ako je god. studija vazna izdvojiti je kao poseban entite, zavisi koliko se siri prica
+* godina studija   <------ ako je god. studija vazna izdvojiti je kao poseban entitet, zavisi koliko se siri prica
 Isti predmet na razlicitim godinama studija, za jedna smer na drugoj godini, a za drugi smer na trecoj godini? Verovatno ce se malo bar razlikovati zavisno od smera.
 Uvesti entitet smer.
 Plan i program je primer polja u tabeli koje nije mali podatak. To su vece kolicine podataka u pitanju (CLOB ili link ka fajlu koji se cuva van tabele).

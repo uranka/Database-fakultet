@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="StudentPredmet2" directorySegmentName="seg_0" id="A9345BDF-5822-687A-8517-0F02A2EF0619">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:26:19 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>Polaze ispit</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2B7DF633-F7B1-DC0B-6AD5-7ACED93BFD37</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C3739C7A-8F32-9AEA-BFF2-99B10065493F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,4 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="C3739C7A-8F32-9AEA-BFF2-99B10065493F" name="PREDMET" seqName="seg_0"/>
    <object objectType="Entity" objectID="2B7DF633-F7B1-DC0B-6AD5-7ACED93BFD37" name="STUDENT" seqName="seg_0"/>
+   <object objectType="Relation" objectID="A9345BDF-5822-687A-8517-0F02A2EF0619" name="StudentPredmet2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8B70F58F-7241-B7F8-6255-D2D40067AC96" name="StudentPredmet" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C3739C7A-8F32-9AEA-BFF2-99B10065493F" name="PREDMET">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:20:33 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PDT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sifra" id="5ACA732A-AF4B-C13C-9FAB-04854EE91C34">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:20:41 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+</Attribute>
+<Attribute name="naziv" id="D4E0A9F2-A09E-B3EB-5C02-31BB458BA51C">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:21:07 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="plan i program" id="81258034-F4EC-B698-C105-1EA18857DB65">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:21:17 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+</Attribute>
+<Attribute name="godina studija" id="31E7A3D4-325B-D188-F39E-9E20F69FBA4C">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:21:25 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFB36BA9-E215-6968-2408-845B8EFA12C7" name="{entity} PK">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:20:49 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5ACA732A-AF4B-C13C-9FAB-04854EE91C34</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

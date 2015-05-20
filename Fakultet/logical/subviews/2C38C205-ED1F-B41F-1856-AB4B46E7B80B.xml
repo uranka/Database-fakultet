@@ -5,7 +5,7 @@
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
 <showLegend>false</showLegend>
-<showLabels>false</showLabels>
+<showLabels>true</showLabels>
 <showRelAttributes>false</showRelAttributes>
 <showGrid>false</showGrid>
 <diagramColor>-1</diagramColor>
@@ -14,7 +14,49 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2B7DF633-F7B1-DC0B-6AD5-7ACED93BFD37" otype="Entity" vid="7C2251ED-ADE6-9A34-B57D-57F04B66F5FE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="86" y="84" width="130" height="143"/>
+<bounds x="142" y="91" width="130" height="143"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C3739C7A-8F32-9AEA-BFF2-99B10065493F" otype="Entity" vid="DFF7CB93-A2D2-8458-5592-FE12F03A0701">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="547" y="96" width="121" height="144"/>
 </OView>
 </objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="8B70F58F-7241-B7F8-6255-D2D40067AC96" otype="Relation" vid_source="7C2251ED-ADE6-9A34-B57D-57F04B66F5FE" vid_target="DFF7CB93-A2D2-8458-5592-FE12F03A0701">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<sourceLabel class="oracle.dbtools.crest.model.design.Label">
+<site>0</site>
+<labelBounds x="352" y="129" width="92" height="20"/>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Text</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</sourceLabel>
+<points>
+<point x="272" y="130"/>
+<point x="547" y="128"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="A9345BDF-5822-687A-8517-0F02A2EF0619" otype="Relation" vid_source="7C2251ED-ADE6-9A34-B57D-57F04B66F5FE" vid_target="DFF7CB93-A2D2-8458-5592-FE12F03A0701">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<sourceLabel class="oracle.dbtools.crest.model.design.Label">
+<site>0</site>
+<labelBounds x="329" y="168" width="65" height="20"/>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Text</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</sourceLabel>
+<points>
+<point x="272" y="165"/>
+<point x="547" y="165"/>
+</points>
+</Connector>
+</connectors>
 </Diagram>
