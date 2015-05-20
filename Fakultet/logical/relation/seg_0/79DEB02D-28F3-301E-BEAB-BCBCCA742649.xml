@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IspitPredmet" directorySegmentName="seg_0" id="79DEB02D-28F3-301E-BEAB-BCBCCA742649">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:45:18 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<sourcePk>DFB36BA9-E215-6968-2408-845B8EFA12C7</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C3739C7A-8F32-9AEA-BFF2-99B10065493F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>406AF9FB-6746-099E-D6FD-1ACCE188CF40</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

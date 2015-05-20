@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="406AF9FB-6746-099E-D6FD-1ACCE188CF40" name="ISPIT">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:43:12 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>IPT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="datum" id="87BE3331-B328-A7CE-1474-18EF4B069E96">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:43:23 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="ocena" id="2CE68FA4-4F30-823B-F6C1-7EA6AE97A5BD">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:43:33 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+</Attribute>
+<Attribute name="komentar" id="003B0D0E-333E-40B7-DA85-DD0A30110146">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:43:53 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+</Attribute>
+<Attribute name="ime profesora" id="004BC2B3-C10B-4519-4737-14D7206C67AC">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:44:27 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="br_indeksa" id="A54C78DB-7749-EA9E-02FA-531415EA2433">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:45:02 UTC</createdTime>
+<generatorID>133A9D40-CAE7-1250-778C-9C204D6559F1</generatorID>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<referedAttribute>F79490AF-D2EE-6EB2-8570-DA099A7C8D77</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+</Attribute>
+<Attribute name="sifra" id="2EC88B86-F32B-DA08-ED65-95CE1087AF26">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:45:18 UTC</createdTime>
+<generatorID>79DEB02D-28F3-301E-BEAB-BCBCCA742649</generatorID>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<referedAttribute>5ACA732A-AF4B-C13C-9FAB-04854EE91C34</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C1D6A4BD-9B46-E1B9-EF65-28C768C88BD6" name="{entity} PK">
+<createdBy>Win7</createdBy>
+<createdTime>2015-05-20 08:43:31 UTC</createdTime>
+<ownerDesignName>Fakultet</ownerDesignName>
+<engineerTo>
+<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87BE3331-B328-A7CE-1474-18EF4B069E96</attributeRef>
+<attributeRef>A54C78DB-7749-EA9E-02FA-531415EA2433</attributeRef>
+<attributeRef>2EC88B86-F32B-DA08-ED65-95CE1087AF26</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
