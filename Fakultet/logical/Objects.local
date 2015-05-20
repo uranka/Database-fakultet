@@ -3,7 +3,9 @@
    <object objectType="Entity" objectID="406AF9FB-6746-099E-D6FD-1ACCE188CF40" name="ISPIT" seqName="seg_0"/>
    <object objectType="Entity" objectID="C3739C7A-8F32-9AEA-BFF2-99B10065493F" name="PREDMET" seqName="seg_0"/>
    <object objectType="Entity" objectID="2B7DF633-F7B1-DC0B-6AD5-7ACED93BFD37" name="STUDENT" seqName="seg_0"/>
+   <object objectType="Entity" objectID="819C2D4B-AFCF-4195-A9A7-872A2F37FBAD" name="TELEFON" seqName="seg_0"/>
    <object objectType="Relation" objectID="79DEB02D-28F3-301E-BEAB-BCBCCA742649" name="IspitPredmet" seqName="seg_0"/>
    <object objectType="Relation" objectID="133A9D40-CAE7-1250-778C-9C204D6559F1" name="IspitStudent" seqName="seg_0"/>
    <object objectType="Relation" objectID="8B70F58F-7241-B7F8-6255-D2D40067AC96" name="StudentPredmet" seqName="seg_0"/>
+   <object objectType="Relation" objectID="884D34CC-E8C1-34B8-0D40-55D98EA361F1" name="StudentTelefon" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

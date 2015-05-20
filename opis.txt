@@ -76,8 +76,10 @@ Atribut telefon pripada entitetu studen ako trazimo samo jedan telefo, ali ovo u
 o staviti ako to polje nece biti odmah popunjeno (bice neki period vremena nepopunjeno).
 
 Ako hocemo da imamo sve moguce telefone neke osobe (licne, telefone roditelja, ...) to se resavana na dva nacina:
+
 1. telefon 1, telefon 2, telefon 3, ali tu je ogranicenje maksimalnog broja telefona na 3, 
 a mozda i  gomila polja ostane nepopunjena (ukoliko vecina ima 1 telefon)
+
 2. poseban entitet za telefon
 TELEFON
 # sifra
@@ -87,6 +89,9 @@ o opis  <-- za opis da li se radi o mobilnom, fiksnom, telefonu roditelja
 Povezujemo entitet student sa entitetom telefon:
 SVaki student moze da ima jedan ili vise telefona.
 Telefon mora da pripada jednom studentu.
+
+Insistiracemo da student ima mejl (uvesti taj atribut), a telefon da moze da da a i ne mora.
+Ovo treba obrazloziti u dokumentaciji.
 
 Dokumentacija: sve sto ne mozemo nacrtati na ERD. Proceduralna pravila, npr. koji ispit moze student odredjene godine da polaze.
 Student prve godine ne moze da polaze ispite sa 4. godine. Student 3. godine moze da polaze ispite 3. godine tek kad polozi sve iz 1. i 2. godine.

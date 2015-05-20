@@ -89,18 +89,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>300</dataTypeSize>
 </Attribute>
-<Attribute name="telefon" id="8EE3707C-B34E-DB98-3A1C-2451F493C8FE">
-<createdBy>Win7</createdBy>
-<createdTime>2015-05-19 11:00:40 UTC</createdTime>
-<ownerDesignName>Fakultet</ownerDesignName>
-<engineerTo>
-<item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-</Attribute>
 <Attribute name="br_lk" id="B4CA7807-5A9B-1A17-827E-E09A4308EC7B">
 <createdBy>Win7</createdBy>
 <createdTime>2015-05-19 11:00:49 UTC</createdTime>

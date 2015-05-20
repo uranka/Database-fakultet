@@ -1,19 +1,20 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="StudentPredmet" directorySegmentName="seg_0" id="8B70F58F-7241-B7F8-6255-D2D40067AC96">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="StudentTelefon" directorySegmentName="seg_0" id="884D34CC-E8C1-34B8-0D40-55D98EA361F1">
 <createdBy>Win7</createdBy>
-<createdTime>2015-05-20 08:24:54 UTC</createdTime>
+<createdTime>2015-05-20 09:24:29 UTC</createdTime>
 <ownerDesignName>Fakultet</ownerDesignName>
 <engineerTo>
 <item key="4A1A369F-E138-A2BE-6098-55F5CA5CC8EA" value="true"/>
 </engineerTo>
+<sourcePk>B59B1AED-8822-648C-9771-EA5A56D0C624</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>slusa predavanja</nameOnSource>
+<nameOnSource>ima</nameOnSource>
 <optionalSource>true</optionalSource>
 <optionalTarget>true</optionalTarget>
-<sourceCardinality>*</sourceCardinality>
+<sourceCardinality>1</sourceCardinality>
 <sourceEntity>2B7DF633-F7B1-DC0B-6AD5-7ACED93BFD37</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>C3739C7A-8F32-9AEA-BFF2-99B10065493F</targetEntity>
+<targetEntity>819C2D4B-AFCF-4195-A9A7-872A2F37FBAD</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>
